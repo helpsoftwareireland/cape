@@ -14,6 +14,10 @@
   width: 100%;
   z-index: 500;
 
+  &.with-bg {
+    background-color: #7387a7
+  }
+
   .logo {
     position: absolute;
     top: 10px;
@@ -35,6 +39,7 @@
       padding: 20px;
       border-radius: 0 0 0 20px;
       opacity: .8;
+      height: 100px;
 
       .main-menu {
         list-style: none;
@@ -43,10 +48,12 @@
         justify-self: flex-end;
 
         li {
+          a{
           display: inline-flex;
           gap: 10px;
           padding-right: 20px;
           border-right: 1px dotted #ccc;
+          }
         }
       }
 
