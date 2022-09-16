@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+
+html,
+body {
+  font-family: Dosis, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  // -webkit-overflow-scrolling: touch;
+  // scrollbar-width: auto;
+  /* "auto" or "thin" */
+  // scrollbar-color: #3c4d61 #fff;
+  /* scroll thumb and track */
+
+}
+
+body::-webkit-scrollbar {
+  // width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  // background: #3c4d61;
+  /* color of the tracking area */
+}
+
+body {
+  margin: 0 !important;
+}
+
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+
+  &:hover {
+    color: #fabd2a;
+  }
+}
+
+
+.grid-item {
+  color: #111;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 8px 18px -6px rgb(24 39 75 / 12%), 0px 12px 42px -4px rgb(24 39 75 / 12%);
+}
+
+
+
+// ::-webkit-scrollbar {
+//   width: 12px;
+//   height: 12px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: #D4D4D4;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   padding: 2px;
+//   background: #898989;
+//   border-radius: 10px;
+//   border: 2.5px solid #D4D4D4;
+
+//   &:vertical {
+//     border-top-width: 0;
+//     border-bottom-width: 0;
+//   }
+
+//   &:horizontal {
+//     border-left-width: 0;
+//     border-right-width: 0;
+//   }
+
+//   &:hover {
+//     border-width: 0;
+//   }
+// }
+
+// .d-flex-center {
+//   display: flex !important;
+//   align-items: center !important;
+//   justify-content: center !important;
+// }
+
+// @for $i from 1 through 3 {
+//   .flex-#{$i} {
+//     flex: $i !important;
+//   }
+// }
+
+// .d-grid {
+//   display: grid !important;
+// }
+
+// $template: 'auto';
+// @for $i from 1 through 10 {
+//   .d-grid-#{$i} {
+//     @extend .d-grid;
+//     grid-template-columns: #{$template} !important;
+//   }
+//   $template: $template + ' auto';
+// }
+
+// @for $i from 1 through 20 {
+//   .grid-gap-#{$i}p {
+//     grid-gap: 1px * $i !important;
+//   }
+// }
+
+// @for $i from 1 through 10 {
+//   .fs-#{$i} {
+//     font-size: 0.5rem * $i !important;
+//   }
+// }
+
+// @for $i from 1 through 50 {
+//   .fs-#{$i}p {
+//     font-size: 1px * $i !important;
+//   }
+// }
+
+// .fs-small {
+//   font-size: 80% !important;
+// }
+
+// .cursor-default {
+//   cursor: default !important;
+// }
+
+// .cursor-pointer {
+//   cursor: pointer !important;
+// }
+
+// .cursor-move {
+//   cursor: move !important;
+// }
+
+// .w-0 {
+//   width: 0 !important;
+// }
+
+// .h-0 {
+//   height: 0 !important;
+// }
+
+// .justify-content-evenly {
+//   justify-content: space-evenly !important;
+// }
+
+// .text-ellipse {
+//   overflow: hidden !important;
+//   white-space: nowrap !important;
+//   text-overflow: ellipsis !important;
+// }
+
+// .pointer-event-none {
+//   pointer-events: none !important;
+// }
+
+// [type=button], [type=reset], [type=submit], button {
+//   -webkit-appearance: none;
+// }
+
+// div.ag-root .ag-cell-focus {
+//   -webkit-user-select: text;
+//   -moz-user-select: text;
+//   -ms-user-select: text;
+//   user-select: text;
+// }

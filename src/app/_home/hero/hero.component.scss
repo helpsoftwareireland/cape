@@ -1,0 +1,27 @@
+.home-hero {
+  // height: 600px;
+  background: #ccc;
+  position: relative;
+  top: -180px;
+  >img{
+    width: 100%;
+  }
+  .welcome{
+    position: absolute;
+    top: 300px;
+    color: #fff;
+    z-index: 2000;
+    background-color: #455c75;
+    padding: 30px;
+    font-size: 24pt;
+    font-family: Dosis;
+    line-height: 2;
+    border-radius: 0 20px 12px 0;
+    .first-line{
+      font-weight: 700;
+    }
+    .second-line{
+      font-weight: 300;
+    }
+  }
+}
