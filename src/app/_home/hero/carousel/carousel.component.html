@@ -1,0 +1,53 @@
+Panel {{activePanel}}
+<div class="carousel-container">
+  <!-- <input class="carousel-open" type="radio" id="carousel-1" hidden="" name="carousel" [checked]="activePanel === 0" />
+  <input class="carousel-open" type="radio" id="carousel-2" hidden="" name="carousel" [checked]="activePanel === 1" />
+  <input class="carousel-open" type="radio" id="carousel-3" hidden="" name="carousel" [checked]="activePanel === 2" />
+  <input class="carousel-open" type="radio" id="carousel-4" hidden="" name="carousel" [checked]="activePanel === 3" />
+  <input class="carousel-open" type="radio" id="carousel-5" hidden="" name="carousel" [checked]="activePanel === 4" /> -->
+
+  <ul class="carousel my-carousel">
+    <input class="carousel__activator" type="radio" id="A" name="activator" [checked]="activePanel === 1" />
+    <input class="carousel__activator" type="radio" id="B" name="activator" [checked]="activePanel === 2" />
+    <input class="carousel__activator" type="radio" id="C" name="activator" [checked]="activePanel === 3" />
+    <input class="carousel__activator" type="radio" id="D" name="activator" [checked]="activePanel === 4" />
+    <input class="carousel__activator" type="radio" id="E" name="activator" [checked]="activePanel === 5" />
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="E"></label>
+      <label class="carousel__control carousel__control--forward" for="B"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="A"></label>
+      <label class="carousel__control carousel__control--forward" for="C"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="B"></label>
+      <label class="carousel__control carousel__control--forward" for="D"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="C"></label>
+      <label class="carousel__control carousel__control--forward" for="E"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="D"></label>
+      <label class="carousel__control carousel__control--forward" for="A"></label>
+    </div>
+    <li class="carousel__slide">
+    </li>
+    <li class="carousel__slide">
+    </li>
+    <li class="carousel__slide">
+    </li>
+    <li class="carousel__slide">
+    </li>
+    <li class="carousel__slide">
+    </li>
+    <div class="carousel__indicators">
+      <label class="carousel__indicator" for="A"></label>
+      <label class="carousel__indicator" for="B"></label>
+      <label class="carousel__indicator" for="C"></label>
+      <label class="carousel__indicator" for="D"></label>
+      <label class="carousel__indicator" for="E"></label>
+    </div>
+  </ul>
+</div>

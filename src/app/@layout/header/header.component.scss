@@ -1,6 +1,7 @@
 .app-header {
 
-
+  display: flex;
+  justify-content: flex-end;
   height: 140px;
   color: #fff;
 
@@ -25,28 +26,33 @@
   }
 
   nav {
+    .bg-right {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      align-items: center;
+      padding: 20px;
+      background: #60769a;
+      padding: 20px;
+      border-radius: 0 0 0 20px;
+      opacity: .8;
 
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    align-items: center;
-    padding: 20px;
-
-    .main-menu {
-      list-style: none;
-      display: inline-flex;
-      gap: 30px;
-      justify-self: flex-end;
-
-      li {
+      .main-menu {
+        list-style: none;
         display: inline-flex;
-        gap: 10px;
-        padding-right: 20px;
-        border-right: 1px dotted #ccc;
-      }
-    }
+        gap: 30px;
+        justify-self: flex-end;
 
-    .cart-menu {
-      justify-self: flex-end;
+        li {
+          display: inline-flex;
+          gap: 10px;
+          padding-right: 20px;
+          border-right: 1px dotted #ccc;
+        }
+      }
+
+      .cart-menu {
+        justify-self: flex-end;
+      }
     }
   }
 }
