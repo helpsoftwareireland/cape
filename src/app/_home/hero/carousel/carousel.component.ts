@@ -24,7 +24,6 @@ export class CarouselComponent implements OnInit {
   }
   public __FunctionSlide() {
     const slides = Array.from(document.getElementsByClassName('carousel__slide'));
-    console.log(slides);
     if (slides === []) {
       // this.repeat();
     }

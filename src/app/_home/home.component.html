@@ -1,5 +1,10 @@
-<div class="app-home">
+<div class="app-home" *ngIf="!isPhonePortrait && !isPhoneLandscape">
   <app-hero></app-hero>
+  <app-main-story></app-main-story>
+
+</div>
+<div class="app-home" *ngIf="isPhonePortrait">
+ <app-hero-mobile></app-hero-mobile>
   <app-main-story></app-main-story>
 
 </div>
