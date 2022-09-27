@@ -1,0 +1,31 @@
+.home-hero {
+  position: relative;
+  top: -180px;
+  height: 1000px;
+  background-image: url("https://helpsoftwareireland.github.io/cape/assets/imgs/hero_1_mobile.png");
+  background-size: cover;
+  // background-position: -360px;
+  background-repeat: no-repeat;
+
+  >img{
+    width: 100%;
+  }
+  .welcome{
+    position: absolute;
+    top: 300px;
+    color: #fff;
+    z-index: 2000;
+    // background-color: #455c75;
+    padding: 30px;
+    font-size: 24pt;
+    font-family: Dosis;
+    line-height: 2;
+    border-radius: 0 20px 12px 0;
+    .first-line{
+      font-weight: 700;
+    }
+    .second-line{
+      font-weight: 300;
+    }
+  }
+}

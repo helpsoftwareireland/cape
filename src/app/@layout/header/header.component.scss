@@ -15,7 +15,8 @@
   z-index: 500;
 
   &.with-bg {
-    background-color: #7387a7
+    background-color: #7387a7;
+    position: fixed;
   }
 
   .logo {

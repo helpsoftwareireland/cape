@@ -7,11 +7,12 @@ import { HomeLandingComponent } from './home-landing/home-landing.component';
 import { HomeRoutingModule } from './home.routing';
 import { MainStoryComponent } from './main-story/main-story.component';
 import { CarouselComponent } from './hero/carousel/carousel.component';
+import { HeroMobileComponent } from './mobile/hero-mobile/hero-mobile.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeroComponent, HomeLandingComponent, MainStoryComponent, CarouselComponent],
+  declarations: [HomeComponent, HeroComponent, HomeLandingComponent, MainStoryComponent, CarouselComponent, HeroMobileComponent],
   imports: [
     CommonModule,HomeRoutingModule, SharedModule
   ]
