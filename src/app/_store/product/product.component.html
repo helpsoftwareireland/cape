@@ -1,0 +1,21 @@
+<div class="product" [ngClass]="{'mobile': isMobilePortrait}" *ngIf="product">
+  <div class="back"><a href="Store"> <fa-icon [icon]="['fas', 'circle-chevron-left']" size="4x" [styles]="{'color': 'fabd2a', 'font-size':'44px'}"
+    primaryColor="#fabd2a"></fa-icon></a></div>
+  <div class="card" [ngStyle]="{'background-color': product.bgcolor}" [ngClass]="{'mobile': isMobilePortrait}">
+
+    <img src="assets/imgs/big/{{product.picture}}" alt="">
+
+    <!-- <div class="card-footer" [innerHtml]="product.name | safe: 'html'" [ngClass]="{'mobile': isMobilePortrait}">
+    </div>
+    <div class="card-price">€ {{product.price}}</div> -->
+  </div>
+  <div class="details">
+    <h2 [innerHtml]="product.name | safe: 'html'"></h2>
+    <div class="price">€ {{product.price}}</div>
+    <div class="description" [innerHtml]="product.description | safe: 'html'"></div>
+
+    <form action="">
+      <button>add to cart</button>
+    </form>
+  </div>
+</div>

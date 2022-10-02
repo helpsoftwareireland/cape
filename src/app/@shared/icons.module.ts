@@ -8,7 +8,11 @@ import {
   faBatteryEmpty,
   faSave,
   faCartShopping,
+  faBagShopping,
   faWineBottle,
+  faBars,
+  faClose,
+  faCircleChevronLeft
 } from '@fortawesome/free-solid-svg-icons';
 import { faAddressBook, faComment } from '@fortawesome/free-regular-svg-icons';
 
@@ -25,7 +29,11 @@ export class IconsModule {
       faCartShopping,
       faWineBottle,
       faAddressBook,
-      faComment
+      faComment,
+      faBars,
+      faClose,
+      faBagShopping,
+      faCircleChevronLeft
     );
   }
 }

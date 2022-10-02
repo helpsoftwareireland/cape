@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,10 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  @Input() isMobile = false;
   homePage = false;
+  sideMenuOpen= false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     if (this.router.url === '/') this.homePage = true;
+  }
+  toggleMenu(){
+    this.sideMenuOpen = !this.sideMenuOpen;
+  }
+  onCloseSideMenu(){
+this.sideMenuOpen = !this.sideMenuOpen;
   }
 }

@@ -1,0 +1,110 @@
+[
+  {
+    "sku": "3SQ1",
+    "name": "3 SQ. MILES</br>Irish Island Gin (700ml)",
+    "picture":"3sq_bottle.png",
+    "bgcolor": "#ffbd49",
+    "price": "39.95",
+    "currency": "euro",
+    "description": "Try our multiple-award winning 3 SQ. MILES gin - available here and shipped directly to your door (in Ireland). Ship as many as six bottles for just €8!"
+  },
+  {
+    "sku": "3SQ2",
+    "name": "3 SQ. MILES</br>Cask-Aged Gin (700ml)",
+    "picture":"3sq_cask.png",
+    "bgcolor": "#c05402",
+    "price": "52.00",
+    "currency": "euro",
+    "description": "We've taken our award-winning gin and aged it wooden casks by the sea to create this exceptional and unique product. Perfect in a martini or adding incredible depth to your Negroni cocktail, this cask-aged gin is sure to please."
+  },
+  {
+    "sku": "3SQ1",
+    "name": "3 SQ. MILES</br>Irish Island Gin (700ml)",
+    "picture":"3sq_bottle.png",
+    "bgcolor": "#c83b02",
+    "price": "39.95",
+    "currency": "euro",
+    "description": "Try our multiple-award winning 3 SQ. MILES gin - available here and shipped directly to your door (in Ireland). Ship as many as six bottles for just €8!"
+  },
+  {
+    "sku": "3SQ2",
+    "name": "3 SQ. MILES</br>Cask-Aged Gin (700ml)",
+    "picture":"3sq_cask.png",
+    "bgcolor": "#3c4d61",
+    "price": "52.00",
+    "currency": "euro",
+    "description": "We've taken our award-winning gin and aged it wooden casks by the sea to create this exceptional and unique product. Perfect in a martini or adding incredible depth to your Negroni cocktail, this cask-aged gin is sure to please."
+  },
+  {
+    "sku": "3SQ1",
+    "name": "3 SQ. MILES</br>Irish Island Gin (700ml)",
+    "picture":"3sq_bottle.png",
+    "bgcolor": "#ffbd49",
+    "price": "39.95",
+    "currency": "euro",
+    "description": "Try our multiple-award winning 3 SQ. MILES gin - available here and shipped directly to your door (in Ireland). Ship as many as six bottles for just €8!"
+  },
+  {
+    "sku": "3SQ2",
+    "name": "3 SQ. MILES</br>Cask-Aged Gin (700ml)",
+    "picture":"3sq_cask.png",
+    "bgcolor": "#c05402",
+    "price": "52.00",
+    "currency": "euro",
+    "description": "We've taken our award-winning gin and aged it wooden casks by the sea to create this exceptional and unique product. Perfect in a martini or adding incredible depth to your Negroni cocktail, this cask-aged gin is sure to please."
+  },
+  {
+    "sku": "3SQ1",
+    "name": "3 SQ. MILES</br>Irish Island Gin (700ml)",
+    "picture":"3sq_bottle.png",
+    "bgcolor": "#c83b02",
+    "price": "39.95",
+    "currency": "euro",
+    "description": "Try our multiple-award winning 3 SQ. MILES gin - available here and shipped directly to your door (in Ireland). Ship as many as six bottles for just €8!"
+  },
+  {
+    "sku": "3SQ2",
+    "name": "3 SQ. MILES</br>Cask-Aged Gin (700ml)",
+    "picture":"3sq_cask.png",
+    "bgcolor": "#3c4d61",
+    "price": "52.00",
+    "currency": "euro",
+    "description": "We've taken our award-winning gin and aged it wooden casks by the sea to create this exceptional and unique product. Perfect in a martini or adding incredible depth to your Negroni cocktail, this cask-aged gin is sure to please."
+  },
+  {
+    "sku": "3SQ3",
+    "name": "3 SQ. MILES</br>Irish Island Gin (700ml)",
+    "picture":"3sq_bottle.png",
+    "bgcolor": "#ffbd49",
+    "price": "39.95",
+    "currency": "euro",
+    "description": "Try our multiple-award winning 3 SQ. MILES gin - available here and shipped directly to your door (in Ireland). Ship as many as six bottles for just €8!"
+  },
+  {
+    "sku": "3SQ4",
+    "name": "3 SQ. MILES</br>Cask-Aged Gin (700ml)",
+    "picture":"3sq_cask.png",
+    "bgcolor": "#c05402",
+    "price": "52.00",
+    "currency": "euro",
+    "description": "We've taken our award-winning gin and aged it wooden casks by the sea to create this exceptional and unique product. Perfect in a martini or adding incredible depth to your Negroni cocktail, this cask-aged gin is sure to please."
+  },
+  {
+    "sku": "3SQ5",
+    "name": "3 SQ. MILES</br>Irish Island Gin (700ml)",
+    "picture":"3sq_bottle.png",
+    "bgcolor": "#c83b02",
+    "price": "39.95",
+    "currency": "euro",
+    "description": "Try our multiple-award winning 3 SQ. MILES gin - available here and shipped directly to your door (in Ireland). Ship as many as six bottles for just €8!"
+  },
+  {
+    "sku": "3SQ6",
+    "name": "3 SQ. MILES</br>Cask-Aged Gin (700ml)",
+    "picture":"3sq_cask.png",
+    "bgcolor": "#3c4d61",
+    "price": "52.00",
+    "currency": "euro",
+    "description": "We've taken our award-winning gin and aged it wooden casks by the sea to create this exceptional and unique product. Perfect in a martini or adding incredible depth to your Negroni cocktail, this cask-aged gin is sure to please."
+  }
+]
