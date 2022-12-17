@@ -1,11 +1,12 @@
 <div class="app-wrapper" [ngClass]="{'mobile': isMobilePortrait}">
   <header>
-    <app-header></app-header>
+    <app-header [isMobile]="isMobilePortrait"></app-header>
   </header>
-  <div class="main">
+  <div class="main" [ngClass]="{'mobile': isMobilePortrait}">
     <router-outlet></router-outlet>
   </div>
   <footer>
-    <app-footer></app-footer>
+    <app-footer [isMobile]="isMobilePortrait"></app-footer>
   </footer>
 </div>
+

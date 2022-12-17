@@ -1,0 +1,38 @@
+.catalog {
+  margin: 5% 5px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+  &.mobile{
+    gap: 5px;
+  }
+  justify-content: center;
+
+  .card {
+    display: grid;
+    grid-template-rows: auto auto minmax(50px,auto);
+    text-align-last: center;
+    .card-main {
+      padding: 50px;
+      &.mobile{
+        padding: 0px;
+      }
+      &:hover{
+        opacity: .6;
+      }
+    }
+
+    .card-footer {
+      text-align: center;
+      font-size: 24px;
+      padding: 0px 20px 0px 20px;
+      font-variant: all-small-caps;
+      &.mobile{
+        font-size: 18px;
+      }
+    }
+    .card-price{
+      font-weight: 900;
+    }
+  }
+}

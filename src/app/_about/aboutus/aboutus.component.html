@@ -1,4 +1,4 @@
-<article class="aboutus">
+<article class="aboutus"  *ngIf="!isPhonePortrait && !isPhoneLandscape">
   <aside>
     <h3>The perfect location
       for Ireland's only island
@@ -37,6 +37,77 @@
       product we've produced and look forward to its continued success.</p>
 
   </aside>
+  <div class="team">
+    <h3>Meet the Team</h3>
+    <div class="people">
+      <ul>
+        <li class="picture pic-1"></li>
+        <li class="name">Séamus Ó Drisceoil</li>
+        <li class="bio">Founder and manager, Séamus O Drisceoil has had a professional business background before
+          promoting and
+          managing a range of enterprises on Cape Clear Island and elsewhere. He is also the manager of award-winning
+          Cape Clear Ferry Service, connecting the island to Baltimore and Schull, while also doing trips to the Fastnet
+          Rock. Séamus is focused on our step-by-step strategy to building a sustainable and successful distillery on
+          Cape Clear.</li>
+      </ul>
+      <ul>
+        <li class="picture pic-2"></li>
+        <li class="name">Máirtín Ó Méalóid</li>
+        <li class="bio">Máirtín is the chairman of the island's co-op, and serves on the board of the distillery. He and
+          his wife are key components of the new product development committee.</li>
+      </ul>
+      <ul>
+        <li class="picture pic-3"></li>
+        <li class="name">Christopher Mason</li>
+        <li class="bio">Not exactly a West Cork native, Christopher Mason has lived on the mainland, near the village of
+          Schull, since 2016. Before that, he lived in Los Angeles for many years. With a digital marketing background,
+          he has been a big driver of getting the website up to the standard it is. Also a candidate for a degree in
+          Brewing and Distilling Operations from the Cork Institute of Technology, Mr. Mason is our Head Distiller and
+          Operations Manager.</li>
+      </ul>
+    </div>
+  </div>
+</article>
+<article class="aboutus mobile"  *ngIf="isPhonePortrait">
+  <div>
+    <h3>The perfect location
+      for Ireland's only island
+      distillery</h3>
+    <p>Our island is one of doers; we don't just dream of ideas, but work hard to realize our goals. It's Ireland's
+      southernmost inhabited island and is proudly Gaeltacht (designated Irish speaking).
+      </p><p>It's also an island that, like
+      all Irish offshore islands, has experienced population decline over the years due to a lack of employment
+      opportunities.
+      </p><p>Cape Clear Island has 130 full-time residents and our school has seven students. Several years ago,
+      some islanders got together to discuss the idea of building a distillery.
+      </p><p>One that would provide employment to
+      islanders, that could one day provide opportunity to the children in the island's school, and most importantly,
+      that would one day produce some of the finest Irish spirits available.
+      </p><p>We received planning permission for this
+      state-of-the-art facility in 2016 and have been working toward that goal since.</p>
+    <img src="assets/imgs/ferry.png" alt="" width="300">
+
+
+      </div>
+  <div>
+
+
+    <p>
+      Like many whiskey distilleries, the path toward producing whiskey involves starting with gin. Only we wanted a gin
+      that could, and would continue to stand on its own. We wanted a gin that reflected our unique island's character,
+      and one that could be considered among the best in the world.
+    </p><p>After nearly a year of development, with involvement
+      from the islanders and consultants from the mainland, we finalized a recipe that did just that. We began bottling
+      3 SQ. MILES in November of 2019.
+    </p><p>Now, the distillery site is a beehive of activity. With demand increasing for our gin, we're distilling away, and
+      happily adding employees. While most activity is handled by local islanders, the head distiller commutes via the
+      ferry from the nearby village of Baltimore.
+      <img src="assets/imgs/group.png" alt="" width="300">
+    </p><p>The distillery enjoys complete community support, with many islanders
+      holding some equity in the company, and always available to lend a hand when things get busy. We're proud of the
+      product we've produced and look forward to its continued success.</p>
+
+    </div>
   <div class="team">
     <h3>Meet the Team</h3>
     <div class="people">

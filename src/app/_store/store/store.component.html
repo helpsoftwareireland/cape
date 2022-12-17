@@ -1,1 +1,10 @@
-<p>store works!</p>
+<div class="catalog" [ngClass]="{'mobile': isMobilePortrait}">
+  <div class="card" *ngFor="let p of products" (click)="onOpenProduct(p.sku)">
+    <div class="card-main" [ngStyle]="{'background-color': p.bgcolor}" [ngClass]="{'mobile': isMobilePortrait}">
+      <img src="assets/imgs/{{p.picture}}" alt="" >
+    </div>
+    <div class="card-footer" [innerHtml]="p.name | safe: 'html'" [ngClass]="{'mobile': isMobilePortrait}">
+    </div>
+    <div class="card-price">€ {{p.price}}</div>
+  </div>
+</div>

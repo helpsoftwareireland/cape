@@ -11,5 +11,4 @@ export class HeroMobileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

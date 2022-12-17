@@ -4,13 +4,15 @@ import { NewsComponent } from './news/news.component';
 import { NewsLandingComponent } from './news-landing/news-landing.component';
 import { SharedModule } from '../@shared/shared.module';
 import { NewsRoutingModule } from './news.routing';
+import { PostComponent } from './post/post.component';
 
 
 
 @NgModule({
   declarations: [
     NewsComponent,
-    NewsLandingComponent
+    NewsLandingComponent,
+    PostComponent
   ],
   imports: [
     CommonModule,NewsRoutingModule, SharedModule

@@ -1,0 +1,24 @@
+<div class="cart">
+  <h2>cart</h2>
+  <div class="cart-empty" *ngIf="isCartEmpty">your cart is empty</div>
+  <div class="cart-content">
+    <div class="card" *ngFor="let p of cart">
+      <div class="card-main" [ngStyle]="{'background-color': p.bgcolor}" [ngClass]="{'mobile': isMobilePortrait}">
+        <img src="assets/imgs/{{p.picture}}" alt="">
+      </div>
+      <div class="card-details">
+        <div class="card-footer" [innerHtml]="p.name | safe: 'html'" [ngClass]="{'mobile': isMobilePortrait}">
+        </div>
+        <div class="card-price">€ {{p.price}}</div>
+        <div class="quantity-selector">
+          <button>-</button>
+          <input type="text" value="1" class="quantity-selector__CurrentQuantity">
+          <button>+</button>
+        </div>
+      </div>
+      <div class="actions">
+        REMOVE
+      </div>
+    </div>
+  </div>
+</div>

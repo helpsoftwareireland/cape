@@ -1,4 +1,30 @@
-<div class="news">
+<div *ngIf="loading" class="loading-container">
+  Loading
+</div>
+<div class="news" *ngIf="!isPhonePortrait && !isPhoneLandscape">
+  <aside *ngIf="blogMain">
+    <!-- <div class="card-large">
+      <h4>{{ blogMain[0].title.rendered }}</h4>
+      <p [innerHTML]="blogMain[0].content.rendered"></p>
+    </div> -->
+
+    <ul>
+      <li *ngFor="let blog of blogData">
+        <div class="card">
+          <img src="{{ blog.jetpack_featured_media_url }}" alt=""/>
+          <div class="card-body">
+            <h4 [innerHTML]="blog.title.rendered"></h4>
+            <p class="post-body" [innerHTML]="blog.excerpt.rendered.toString().replace('[...]','')"></p>
+            <p class="read-more" (click)="openPost(blog.id)">Read more...</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</div>
+
+
+<div class="news mobile" *ngIf="isPhonePortrait">
   <aside>
     <h3>News</h3>
     <div class="card-large">
@@ -67,55 +93,6 @@
         </div>
       </li>
     </ul>
-    <ul>
-      <li>
-        <div class="card">
-          <img src="assets/imgs/news/story-3.jpg" alt="">
-          <div class="card-body">
-            <h4>Warbler Indian Export for 3 Sq Miles Gin</h4>
-            <p>3 Sq Miles Cape Clear Island Gin is exported to India under the Warbler label Cape Clear Island
-              Distillery has
-              taken another amazing step forward</p>
-            <p>Read more...</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="assets/imgs/news/story-3.jpg" alt="">
-          <div class="card-body">
-            <h4>Warbler Indian Export for 3 Sq Miles Gin</h4>
-            <p>3 Sq Miles Cape Clear Island Gin is exported to India under the Warbler label Cape Clear Island
-              Distillery has
-              taken another amazing step forward</p>
-            <p>Read more...</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="assets/imgs/news/story-3.jpg" alt="">
-          <div class="card-body">
-            <h4>Warbler Indian Export for 3 Sq Miles Gin</h4>
-            <p>3 Sq Miles Cape Clear Island Gin is exported to India under the Warbler label Cape Clear Island
-              Distillery has
-              taken another amazing step forward</p>
-            <p>Read more...</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="assets/imgs/news/story-3.jpg" alt="">
-          <div class="card-body">
-            <h4>Warbler Indian Export for 3 Sq Miles Gin</h4>
-            <p>3 Sq Miles Cape Clear Island Gin is exported to India under the Warbler label Cape Clear Island
-              Distillery has
-              taken another amazing step forward</p>
-            <p>Read more...</p>
-          </div>
-        </div>
-      </li>
-    </ul>
+
   </aside>
 </div>

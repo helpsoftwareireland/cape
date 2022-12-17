@@ -7,10 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './_home/home.component';
 import { LayoutModule } from './@layout/layout.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpRequestInterceptor } from './@core/http-request-interceptor';
 
 @NgModule({
   declarations: [
     AppComponent
+
   ],
   imports: [
     BrowserModule,
@@ -20,5 +23,5 @@ import { LayoutModule } from './@layout/layout.module';
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+},)
 export class AppModule { }

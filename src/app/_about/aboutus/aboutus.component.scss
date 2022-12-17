@@ -59,11 +59,39 @@
         }
 
         .bio {
-          font-size: 22pt;
+          font-size: 20px;
           line-height: 2;
           width: 400px;
         }
       }
+    }
+  }
+  &.mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    p{
+      font-size: 20px;
+    }
+    .team{
+      .people{
+        display: flex;
+        flex-direction: column;
+        ul{
+          padding-inline-start: 0px;
+          .picture{
+            width: 200px;
+            height: 200px;
+            background-position: center;
+    background-size: contain;
+
+          }
+        }
+      }
+    }
+    .bio{
+      width: 90% !important;
     }
   }
 }
