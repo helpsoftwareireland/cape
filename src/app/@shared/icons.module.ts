@@ -12,7 +12,7 @@ import {
   faWineBottle,
   faBars,
   faClose,
-  faCircleChevronLeft
+  faCircleChevronLeft, faPhone, faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 import { faAddressBook, faComment } from '@fortawesome/free-regular-svg-icons';
 
@@ -33,7 +33,8 @@ export class IconsModule {
       faBars,
       faClose,
       faBagShopping,
-      faCircleChevronLeft
+      faCircleChevronLeft,
+      faPhone, faEnvelope
     );
   }
 }

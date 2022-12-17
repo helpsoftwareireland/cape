@@ -5,6 +5,7 @@ import { MainbaseComponent } from './mainbase/mainbase.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     MainbaseComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule, RouterModule, SharedModule

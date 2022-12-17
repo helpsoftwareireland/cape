@@ -1,4 +1,101 @@
-.app-footer{
+.app-footer {
   background-color: #3c4d61;
   height: 480px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 30px;
+  color: #fff;
+
+  h2 {
+    font-variant: small-caps;
+  }
+
+  p {
+    margin: 3px 0 0 0;
+
+    &.blank {
+      margin: 40px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      height: 20px;
+      width: 220px;
+      border-radius: 6px;
+      padding: 5px;
+      font-size: 16px;
+      font-family: Dosis;
+      margin-bottom: 5px;
+    }
+
+    button {
+      margin-left: 150px;
+      border-radius: 6px;
+      border: 0;
+      height: 35px;
+      width: 80px;
+      font-variant: all-small-caps;
+      color: #fff;
+      background-color: #7ca7ca;
+    }
+  }
+
+  .logo {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .terms {
+    grid-row: 2;
+    grid-column: 1/-1;
+    justify-self: self-end;
+    font-variant: small-caps;
+
+    span {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &.mobile {
+    form {
+      input {
+        height: 40px;
+        width: 95%;
+
+      }
+
+      .submit {
+        text-align: right;
+      }
+
+      button {
+        margin: 0;
+        width: 100px;
+        height: 50px;
+      }
+    }
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+
+    .terms {
+      grid-row: 5;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      line-height: 2rem;
+      text-align: right;
+      border-top: 1px #fff solid;
+    }
+  }
 }

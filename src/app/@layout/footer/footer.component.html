@@ -1,3 +1,48 @@
-<div class="app-footer">
-
+<div class="app-footer" [ngClass]="{'mobile': isMobile}">
+  <div class="logo">
+    <a href="/cape">
+      <img src="assets/imgs/logo.png" alt="">
+    </a>
+  </div>
+  <div class="newsletter">
+    <h2>newsletter</h2>
+    <p>Sign up for news and exclusive offers</p>
+    <p class="blank"> </p>
+    <form action="">
+      <p><input type="text" placeholder="Enter your name"></p>
+      <p><input type="email" placeholder="Enter your email address"></p>
+      <p class="submit"><button>Submit</button></p>
+    </form>
+  </div>
+  <div class="contact">
+    <h2>contact</h2>
+    <p>Cape Clear Island Distillery</p>
+    <p>Cape Clear Island</p>
+    <p>Skibbereen</p>
+    <p>Co.Cork - Ireland</p>
+    <p class="blank"> </p>
+    <p><fa-icon [icon]="['fas', 'envelope']" size="lg" [styles]="{'color': 'fabd2a', 'font-size':'22px'}"
+      primaryColor="#fabd2a"></fa-icon>&nbsp;<a href="mailto:info@capecleardistillery.com">info@capecleardistillery.com</a> </p>
+    <p class="blank"> </p>
+    <p>Séamus Ó Drisceoil <br />
+      <fa-icon [icon]="['fas', 'phone']" size="1x" [styles]="{'color': 'fabd2a', 'font-size':'20px'}"
+      primaryColor="#fabd2a"></fa-icon>&nbsp;087-1405584 </p>
+      <p class="blank"> </p>
+    <p>Mairtín Ó Méalóid <br />
+      <fa-icon [icon]="['fas', 'phone']" size="1x" [styles]="{'color': 'fabd2a', 'font-size':'20px'}"
+      primaryColor="#fabd2a"></fa-icon>&nbsp;086-8322855 </p>
+  </div>
+  <div class="social">
+    <h2>follow us</h2>
+    <p>Twitter</p>
+    <p>https://mobile.twitter.com/capedistillery</p>
+    <p class="blank"> </p>
+    <p>Facebook</p>
+    <p>https://mobile.twitter.com/capedistillery</p>
+  </div>
+  <div class="terms">
+    <span>© 2022 cape clear island distillery</span>
+    <span>terms & conditions</span>
+    <span>our privacy policy</span>
+  </div>
 </div>

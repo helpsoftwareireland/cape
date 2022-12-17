@@ -1,25 +1,14 @@
-<div *ngIf="loading" class="loading-container">
-  Loading
-</div>
 <div class="news" *ngIf="!isPhonePortrait && !isPhoneLandscape">
-  <aside *ngIf="blogMain">
-    <!-- <div class="card-large">
-      <h4>{{ blogMain[0].title.rendered }}</h4>
-      <p [innerHTML]="blogMain[0].content.rendered"></p>
-    </div> -->
+  <aside *ngIf="blog">
+    <div class="card-large">
+      <!-- <img
+      src="{{ blogMain[0].jetpack_featured_media_url }}"
+      alt=""
+    /> -->
+      <h4 [innerHTML]="blog.title.rendered"></h4>
+      <p [innerHTML]="blog.content.rendered"></p>
+    </div>
 
-    <ul>
-      <li *ngFor="let blog of blogData">
-        <div class="card">
-          <img src="{{ blog.jetpack_featured_media_url }}" alt=""/>
-          <div class="card-body">
-            <h4 [innerHTML]="blog.title.rendered"></h4>
-            <p class="post-body" [innerHTML]="blog.excerpt.rendered.toString().replace('[...]','')"></p>
-            <p class="read-more" (click)="openPost(blog.id)">Read more...</p>
-          </div>
-        </div>
-      </li>
-    </ul>
   </aside>
 </div>
 

@@ -24,10 +24,9 @@
               primaryColor="#fabd2a"></fa-icon>news
           </a></li>
       </ul>
-      <div class="cart-menu">
-        <fa-icon [icon]="['fas', 'bag-shopping']" size="lg" [styles]="{'color': 'fabd2a', 'font-size':'22px'}"
-          primaryColor="#fabd2a"></fa-icon> cart
-
+      <div class="cart-toggle" (click)="toggleCart()">
+        <fa-icon [icon]="['fas', 'bag-shopping']" size="lg"
+          [styles]="{'color': 'fabd2a', 'font-size':'22px'}" primaryColor="#fabd2a"></fa-icon> cart
       </div>
     </div>
   </nav>
@@ -42,17 +41,19 @@
       <li> <a href="/cape">
           <img src="assets/imgs/logo.png" alt=""></a></li>
       <li>
-        <fa-icon [icon]="['fas', 'bag-shopping']" size="lg" [styles]="{'color': 'fabd2a', 'font-size':'22px'}"
-          primaryColor="#fabd2a"></fa-icon>
+        <fa-icon (click)="toggleCart()" [icon]="['fas', 'bag-shopping']" size="lg"
+          [styles]="{'color': 'fabd2a', 'font-size':'22px'}" primaryColor="#fabd2a"></fa-icon>
       </li>
     </ul>
   </nav>
 </div>
-<section class="sidebar-menu fromLeft" *ngIf="sideMenuOpen" [ngClass]="{'fromLeft': !sideMenuOpen}">
+<section class="sidebar-menu fromLeft"[ngClass]="{'fromLeft': sideMenuOpen}">
 
   <ul class="side-menu">
-    <li class="close-button"><fa-icon (click)="onCloseSideMenu()" [icon]="['fas', 'close']" size="lg" [styles]="{'color': '111', 'font-size':'22px'}"
-      primaryColor="#111"></fa-icon></li>
+    <li class="close-button">
+      <fa-icon (click)="onCloseSideMenu()" [icon]="['fas', 'close']" size="lg"
+        [styles]="{'color': '111', 'font-size':'22px'}" primaryColor="#111"></fa-icon>
+    </li>
     <li><a href="Store">
         <fa-icon [icon]="['fas', 'wine-bottle']" size="lg" [styles]="{'color': 'fabd2a', 'font-size':'22px'}"
           primaryColor="#fabd2a"></fa-icon>store
@@ -67,4 +68,22 @@
           primaryColor="#fabd2a"></fa-icon>news
       </a></li>
   </ul>
+</section>
+
+<section class="cart-menu" [ngClass]="{'fromRight': cartOpen}" *ngIf="!isMobile" >
+  <div class="cart-close">
+    <fa-icon (click)="toggleCart()" [icon]="['fas', 'close']" size="lg"
+      [styles]="{'color': '111', 'font-size':'22px'}" primaryColor="#111"></fa-icon>
+  </div>
+  <app-cart></app-cart>
+
+</section>
+
+<section class="cart-menu mobile" *ngIf="isMobile" [ngClass]="{'fromRight': cartOpen}">
+  <div class="cart-close">
+    <fa-icon (click)="toggleCart()" [icon]="['fas', 'close']" size="lg"
+      [styles]="{'color': '111', 'font-size':'22px'}" primaryColor="#111"></fa-icon>
+  </div>
+  <app-cart></app-cart>
+
 </section>

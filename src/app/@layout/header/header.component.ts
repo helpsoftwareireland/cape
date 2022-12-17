@@ -9,16 +9,20 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   @Input() isMobile = false;
   homePage = false;
-  sideMenuOpen= false;
+  sideMenuOpen = false;
+  cartOpen = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     if (this.router.url === '/') this.homePage = true;
   }
-  toggleMenu(){
+  toggleMenu() {
     this.sideMenuOpen = !this.sideMenuOpen;
   }
-  onCloseSideMenu(){
-this.sideMenuOpen = !this.sideMenuOpen;
+  toggleCart() {
+    this.cartOpen = !this.cartOpen;
+  }
+  onCloseSideMenu() {
+    this.sideMenuOpen = !this.sideMenuOpen;
   }
 }
